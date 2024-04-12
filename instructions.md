@@ -2,11 +2,11 @@
 
 > This section is based on a tutorial by Django Girls (https://github.com/DjangoGirls/tutorial/blob/master/en/python_installation/instructions.md)
 
-Let's installing Python! We want you to install the latest version of Python 3, so if you have any earlier version, you will need to upgrade it. If you already have version 3.6 or higher you should be fine.
+Let's install Python! We want you to install the latest version of Python 3, so if you have an earlier version, you will need to upgrade it. If you already have version 3.6 or higher, you should be fine.
 
 Please install normal Python as follows, even when you have Anaconda installed on your computer.
 
-<!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
+# Windows
 
 First check whether your computer is running a 32-bit version or a 64-bit version of Windows, on the "System type" line of the System Info page. To reach this page, try one of these methods:
 * Press the Windows key and Pause/Break key at the same time
@@ -26,8 +26,8 @@ Note: If you are using an older version of Windows (7, Vista, or any older versi
 
 <!--endsec-->
 
-<!--sec data-title="Install Python: OS X" data-id="python_OSX"
-data-collapse=true ces-->
+
+# Mac OS
 
 > **Note** Before you install Python on OS X, you should ensure your Mac settings allow installing packages that aren't from the App Store. Go to System Preferences (it's in the Applications folder), click "Security & Privacy," and then the "General" tab. If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
 
@@ -38,8 +38,7 @@ You need to go to the website https://www.python.org/downloads/mac-osx/ and down
 
 <!--endsec-->
 
-<!--sec data-title="Install Python: Linux" data-id="python_linux"
-data-collapse=true ces-->
+# Linux
 
 It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type the following command:
 
@@ -48,7 +47,7 @@ $ python3 --version
 Python 3.8.6
 ```
 
-If you have a different version of Python installed, at least {{ book.py_min_version }} (e.g. {{ book.py_min_release }}), then you don't have to upgrade. If you don't have Python installed, or if you want a different version, first check what Linux distribution you are using with the following command:
+If you have a different version of Python installed, at least 3.6 (e.g. 3.6.8), then you don't have to upgrade. If you don't have Python installed, or if you want a different version, first check what Linux distribution you are using with the following command:
 
 ```
 $ grep '^NAME=' /etc/os-release
@@ -58,7 +57,7 @@ Afterwards, depending on the result, follow one of the following installation gu
 
 <!--endsec-->
 
-<!--sec data-title="Install Python: Debian or Ubuntu" data-id="python_debian" data-collapse=true ces-->
+# Ubuntu
 
 Type this command into your console:
 
@@ -68,8 +67,7 @@ $ sudo apt install python3
 
 <!--endsec-->
 
-<!--sec data-title="Install Python: Fedora" data-id="python_fedora"
-data-collapse=true ces-->
+# Fedora
 
 Use this command in your console:
 
@@ -81,8 +79,7 @@ If you're on older Fedora versions you might get an error that the command `dnf`
 
 <!--endsec-->
 
-<!--sec data-title="Install Python: openSUSE" data-id="python_openSUSE"
-data-collapse=true ces-->
+# openSUSE
 
 Use this command in your console:
 
