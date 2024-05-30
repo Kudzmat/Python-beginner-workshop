@@ -117,8 +117,6 @@ class GameBoy():
             print()
             print(" ``` It's a DRAW!!! ``` ")
 
-num = 1
-print(type(num))
 my_game = GameBoy()
 
 my_game.rock_paper_scissors()
