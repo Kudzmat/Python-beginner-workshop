@@ -54,5 +54,6 @@ Define a function called myfunc that takes in a string, and returns a matching s
 For Example:
 
 .. code-block:: python
+
     myfunc('Anthropomorphism')
     # Output: 'aNtHrOpOmOrPhIsM'
