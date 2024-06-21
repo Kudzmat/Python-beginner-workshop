@@ -3,9 +3,9 @@ Question 1
 
 Strings are immutable.
 
-a) True
+a True
 
-b) False
+b False
 
 
 Question 2
@@ -13,11 +13,11 @@ Question 2
 
 If s='hello' what is the output of s[1]
 
-a) 'h'
+a 'h'
 
-b) 'e'
+b 'e'
 
-c) 1
+c 1
 
 
 Question 3
@@ -25,10 +25,10 @@ Question 3
 
 If s='Sammy' what is the output of s[2:]?
 
-a) 'ammy'
+a 'ammy'
 
-b) 'am'
+b 'am'
 
-c) 'mmy'
+c 'mmy'
 
-d) 'my'
+d 'my'
