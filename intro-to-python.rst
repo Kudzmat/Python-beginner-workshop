@@ -94,12 +94,19 @@ Variables Assignments
 
     # further calculations
     # how many puppies each sibling gets
-    
     allocated_puppies = puppies / my_siblings
-
     print(allocated_puppies)
 
-    # do I have too many dogs!?
+    # you can also reassign variables
+    puppies = 30
+    print(puppies)
+
+    # in Python you can reassign to different data type
+    puppies = ["Shaq", "Lonzo", "Jerry"]
+    print(puppies)
+
+    # check variable type
+    type(puppies)
 
 
 Strings
