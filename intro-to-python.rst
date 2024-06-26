@@ -63,11 +63,11 @@ Some other useful *operators*
     
     print(3 ** 2)
     
-    # division, but only into whole numbers
+    # is division, returns whole numbers
     
-    print(19//40 
+    print(19//4) 
     
-    # returns the remainder 
+    # mod operator returns the remainder 
     
     print(19%4)
     
@@ -75,25 +75,31 @@ Some other useful *operators*
 
 https://docs.python.org/3/tutorial/introduction.html#using-python-as-a-calculator
 
+Numbers Quiz ---> https://github.com/Kudzmat/Python-Installation-Tutorial/blob/main/numbers.rst 
 
-Variables
+
+Variables Assignments
 ---------
 
-::
+.. code-block:: python
 
-    >>> a = 3
-    >>> b = 27
-    >>> b / a
-    9.0
-    >>> c = a + b
-    >>> c
-    30
+    # number of siblings
+    my_siblings = 3
 
-    # errors!
-    >>> d
-    Traceback (most recent call last):
-      File "<stdin>", line 1, in <module>
-    NameError: name 'd' is not defined
+    # number of puppies
+    puppies = 27
+
+    # result
+    print(puppies / my_siblings)
+
+    # further calculations
+    # how many puppies each sibling gets
+    
+    allocated_puppies = puppies / my_siblings
+
+    print(allocated_puppies)
+
+    # do I have too many dogs!?
 
 
 Strings
