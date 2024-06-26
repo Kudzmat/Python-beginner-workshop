@@ -36,26 +36,41 @@ Simple maths
 
 We're using Python *operators*.
 
-::
+.. code-block:: python
 
-    >>> 6 - 7
-    -1
-    >>> 8 / 2
-    4.0
-    >>> 8 / 3
-    2.6666666666666665
+    # addition
 
-Some other useful operators::
+    print(6+7)
 
-    >>> # 3 to the power of 2
-    >>> 3 ** 2
-    9
-    >>> # division, but only into whole numbers
-    >>> 19 // 4 
-    4
-    >>> # and the remainder 
-    >>> 19 % 4
-    3
+    # subtraction
+    
+    print(8-5)
+
+    # multiplication
+    
+    print(2*3)
+
+    # division
+    
+    print(3/2)
+    
+
+Some other useful *operators*
+
+.. code-block:: python
+
+    # 3 to the power of 2
+    
+    print(3 ** 2)
+    
+    # division, but only into whole numbers
+    
+    print(19//40 
+    
+    # returns the remainder 
+    
+    print(19%4)
+    
 
 
 https://docs.python.org/3/tutorial/introduction.html#using-python-as-a-calculator
