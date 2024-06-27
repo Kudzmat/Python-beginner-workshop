@@ -262,7 +262,54 @@ Lists
 
 
 http://docs.python.org/3/tutorial/introduction.html#lists
+
 Lists quiz ---> https://github.com/Kudzmat/Python-Installation-Tutorial/blob/main/lists.rst
+
+Dictionaries
+------------
+
+.. code-block:: python
+
+    menu = {"hamburger": 3, "chicken": 2, "fries": "1"}
+    print(menu["chicken"])
+
+    # lists in a dictionary
+    menu = {"hamburger": 3, "chicken": 2, "fries": "1", "drinks": ['wine', 'beer', 'soft drinks']}
+
+    print(menu["drinks"])
+
+    # stacking calls
+    drinks_menu = menu["drinks"]
+
+    # beer
+    drink_type = drinks_menu[1]
+
+    # capitalize beer
+    drink_type.capitalize()
+
+    # you can do this in one move
+    menu["drinks"][0].capitalize()
+
+    # adding new items
+    menu['ribs'] = 200
+    print(menu)
+
+    # changing 
+    menu['ribs'] = 5.99
+    print(menu)
+
+    # grabbing all keys
+    menu.keys()
+
+    # values
+    menu.values()
+
+    # key, value pairs
+    menu.items()  # returns tuple
+
+https://docs.python.org/3/tutorial/datastructures.html#dictionaries
+
+Dictionaries quiz ---> https://github.com/Kudzmat/Python-Installation-Tutorial/blob/main/dictionaries.rst
 
 Comparisons, and True and False
 -------------------------------
@@ -327,37 +374,6 @@ A set is an unordered collection with no duplicate elements.
     >>> life = ["fun", "fun", "fun", "boring", "fun"]
     >>> set(life)
     set(['fun', 'boring'])
-
-
-Dictionaries
-------------
-
-::
-
-    >>> legs = {"spider": 6, "dog": 4, "bird": 2, "ant": 6}
-    >>> legs["bird"]
-    2
-
-    # we don't have humans
-    >>> legs["human"]
-    Traceback (most recent call last):
-      File "<stdin>", line 1, in <module>
-    KeyError: 'human'
-    >>>
-
-    # a safer way if we're not sure if the key's present
-    >>> legs.get("human")
-    # or even
-    >>> legs.get("human", "no data available")
-
-    # better add human though anyway
-    >>> legs["human"] = 2
-
-    # and we'd better correct the entry for spiders
-    >>> legs["spider"] = 8
-
-
-https://docs.python.org/3/tutorial/datastructures.html#dictionaries
 
 
 Loops
