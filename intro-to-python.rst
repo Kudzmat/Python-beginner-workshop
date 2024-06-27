@@ -112,14 +112,103 @@ Variables Assignments
 Strings
 -------
 
-::
+.. code-block:: python
 
-    >>> "hello" + "world"
-    'helloworld'
-    >>> a = "hello"
-    >>> b = "world"
-    >>> a + b
-    'helloworld'
+    # double quotes
+    print("hello")
+
+    # single quotes
+    print('world')
+
+    # sentences are also strings
+    # white spaces also count as characters
+    print("I am also a string')
+
+    # errors
+    print('Hey, I'm feeling good')
+
+    # checking the length of a string
+    len("hello")
+
+    mood = 'I am happy!'
+    len(mood)
+
+    # indexing and slicing
+    my_string = "Hello World"
+
+    # return first character
+    print(my_string[0])
+
+    # return r
+    print(my_string[8]
+
+    # return l
+    print(my_string[9])
+    print(my_string[-3])
+
+    # slicing
+    my_string = "abcdefghijk"
+
+    # start from c until the end
+    print(my_string[2:]
+
+    # from a up to but not including d
+    print(my_string[:3]
+
+    # grab def
+    print(my_string[3:6]
+
+    # step size of two
+    print(my_string[::2])
+
+    print(my_string[2:7:2]
+
+    # trick to reverse your string
+    # beginning to end in steps of -1
+    print(my_string[::-1])
+
+
+String properties and methods
+------------------------------
+
+.. code-block:: python
+
+    # immutability
+
+    # you want to change name from "Sam" to "Pam"
+    name = "Sam"    
+
+    # this won't work
+    name[0] = 'P'
+
+    # Creating a new string 
+    last_letters = name[1:]
+    name = "p" + last_letters
+    print(new_name)
+
+    # new sentence
+    x = "Hello world"
+    x = x + "it is beautiful outside"
+    print(x)
+
+    # make sure you don't use wrong data type
+    2 + 3
+    '2' + '3'
+
+    # built-in methods
+    name = "kudzayi"
+
+    # upper case
+    name.upper()
+
+    # if you want it to change you need to reassign
+    # name = name.upper()
+
+    # lowercase
+    name.lower()
+
+    # uppercase first letter
+    name.capitalize()
 
 
 Comparisons, and True and False
