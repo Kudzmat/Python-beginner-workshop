@@ -210,6 +210,59 @@ String properties and methods
     # uppercase first letter
     name.capitalize()
 
+Strings Quiz ---> https://github.com/Kudzmat/Python-Installation-Tutorial/blob/main/strings.rst 
+
+
+Lists
+-------
+
+.. code-block:: python
+
+    # same data type
+    my_list = [1,2,3]
+
+    # various data types
+    my_list = [1, "hello", 3.5, 10]
+
+    # check length
+    len(my_list)
+
+    # indexing
+    my_list[1]
+    my_list[1:3]
+
+    # concatnation 
+    another_list = ["Tom", "Jerry"]
+    new_list = my_list + another_list
+
+    # lists are mutable
+    new_list[0] = "Scooby"
+
+    # adding element to end of list with built-in methods
+    new_list.append("Buggs")
+
+    # remove item at the end, it is returned
+    popped_element = new_list.pop()
+    print(popped_element)
+
+    # removing at a specific index
+    popped_index = new_list.pop(2)
+
+    # sorting a list
+    new_list = ['x', 'h', 'c', 'b', 'e', 'a', 'f']
+    num_list = [8, 9, 1, 4, 3, 5]
+
+    # does not create new list, sorts current list
+    new_list.sort()
+    num_list.sort()
+
+    # reversing a list
+    new_list.reverse()
+    num_list.reverse()
+
+
+http://docs.python.org/3/tutorial/introduction.html#lists
+Lists quiz ---> https://github.com/Kudzmat/Python-Installation-Tutorial/blob/main/lists.rst
 
 Comparisons, and True and False
 -------------------------------
@@ -262,43 +315,6 @@ Tuples
     ('helium', 'lithium', 'beryllium')
     >>> elements[-1]
     'boron'
-
-
-Lists
-^^^^^
-
-::
-
-    >>> elements = list(elements)
-    >>> type(elements)
-    <type 'list'>
-
-Lists can be sliced in the same way as tuples. Unlike tuples, lists can be
-maniupulated once created::
-
-    >>> elements.sort()
-    >>> elements
-    ['beryllium', 'boron', 'helium', 'hydrogen', 'lithium']
-
-``sort()`` is a *method* of the list *class*. Any list is a member of this
-class - it's a list *object* - and will have all the abilities that lists can
-have.
-
-::
-
-    # the items in collection don't even have to be of the same type
-    >>> elements.append(37)
-    >>> elements
-    ['beryllium', 'boron', 'helium', 'hydrogen', 'lithium', 37]
-
-    # and an item can itself be a collection
-    >>> elements.append(["pancakes", "bread"])
-    >>> elements
-    ['beryllium', 'boron', 'helium', 'hydrogen', 'lithium', 37, ['pancakes',
-    'bread']]
-
-
-http://docs.python.org/3/tutorial/introduction.html#lists
 
 
 Sets
