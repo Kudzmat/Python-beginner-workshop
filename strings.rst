@@ -32,3 +32,15 @@ b 'am'
 c 'mmy'
 
 d 'my'
+
+
+Question 4
+-------
+
+Write a string index that returns just the letter 'r'  from 'Hello World'
+
+
+Question 5
+-------
+
+Use string slicing to grab the word 'ink'  from inside 'tinker' 
