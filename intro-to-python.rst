@@ -311,6 +311,37 @@ https://docs.python.org/3/tutorial/datastructures.html#dictionaries
 
 Dictionaries quiz ---> https://github.com/Kudzmat/Python-Installation-Tutorial/blob/main/dictionaries.rst
 
+
+.. code-block:: python
+
+    Tuples
+    -------
+    t = (17,9,93)
+    my_list = [17,9,93]
+    
+    type(t)
+    type(my_list)
+    
+    # slicing & indexing
+    t[0]
+    t[-1]
+
+    # count
+    t = ('a', 'a', 'c')
+    print(t.count('a'))
+
+    # returns from instance 
+    print(t.index('a'))
+
+    # differences
+    my_list[0] = 'New'
+    # does not have the flexibility of a list
+    # provides data integrity as you will not accidentally change data in large peieces of code
+    t[0] = 'New' 
+
+Tuples quiz ---> https://github.com/Kudzmat/Python-Installation-Tutorial/blob/main/tuples.rst 
+
+
 Comparisons, and True and False
 -------------------------------
 
@@ -336,33 +367,6 @@ Python *comparison operators*
     >>> 1 < 2
     True
     # also <= and >=
-
-
-Tuples, lists and sets
-----------------------
-
-Tuples, lists and sets are all examples of Python *collections*.
-
-
-Tuples
-^^^^^^
-
-::
-
-    >>> elements = ("hydrogen", "helium", "lithium", "beryllium", "boron")
-    >>> type(elements)
-    <type 'tuple'>
-
-    # slicing a tuple
-    >>> elements[0]
-    'hydrogen'
-    >>> elements[3]
-    'beryllium'
-    >>> elements[1:4]
-    ('helium', 'lithium', 'beryllium')
-    >>> elements[-1]
-    'boron'
-
 
 Sets
 ^^^^
