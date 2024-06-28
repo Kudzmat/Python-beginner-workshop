@@ -312,10 +312,11 @@ https://docs.python.org/3/tutorial/datastructures.html#dictionaries
 Dictionaries quiz ---> https://github.com/Kudzmat/Python-Installation-Tutorial/blob/main/dictionaries.rst
 
 
+Tuples
+-------
+
 .. code-block:: python
 
-    Tuples
-    -------
     t = (17,9,93)
     my_list = [17,9,93]
     
@@ -342,6 +343,59 @@ Dictionaries quiz ---> https://github.com/Kudzmat/Python-Installation-Tutorial/b
 Tuples quiz ---> https://github.com/Kudzmat/Python-Installation-Tutorial/blob/main/tuples.rst 
 
 
+Sets
+------------
+
+.. code-block:: python
+
+    my_set = set()
+    
+    my_set.add(1)
+    
+    print(my_set)
+    
+    my_set.add(2)
+    
+    print(my_set)
+    
+    my_set.add(2)
+    
+    print(my_set)
+    
+    # useful to cast a list as a set
+    my_list = [1,1,2,3,3,3,3,3,4,5]
+    
+    set(my_list)
+    
+    print(my_list)
+
+
+Booleans and Comparisons
+-------------------------
+
+.. code-block:: python
+
+    # are they equal?
+    1 == 2
+    
+    1 == 1
+    
+    a = 10
+    
+    b = 10
+    
+    a == b
+    
+    # are they not equal?
+    1 != 2
+    
+    # greater and less than
+    2 > 1
+    
+    1 < 2
+    # also <= and >=
+
+
 Comparisons, and True and False
 -------------------------------
 
@@ -349,36 +403,7 @@ Python *comparison operators*
 
 ::
 
-    >>> # are they equal?
-    >>> 1 == 2
-    False
-    >>> 1 == 1
-    True
-    >>> a = 10
-    >>> b = 10
-    >>> a == b
-    True
-    # are they not equal?
-    >>> 1 != 2
-    True
-    # greater and less than
-    >>> 2 > 1
-    True
-    >>> 1 < 2
-    True
-    # also <= and >=
-
-Sets
-^^^^
-
-A set is an unordered collection with no duplicate elements.
-
-::
-
-    >>> life = ["fun", "fun", "fun", "boring", "fun"]
-    >>> set(life)
-    set(['fun', 'boring'])
-
+ 
 
 Loops
 -----
