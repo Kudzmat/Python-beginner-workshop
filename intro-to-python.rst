@@ -499,6 +499,39 @@ For Loops
 While Loops
 ------------
 
+.. code-block:: python
+
+    x = 0 
+    while x < 5:
+        print(f"The current value of x is {x}")
+        # x = x + 1
+        x += 1
+    else:
+        print("X is not less than 5")
+
+    # using pass
+    x = [1,2,3]
+    for item in x:
+        # leaving empty will cause an error because Python is expecting something
+        pass  # do nothing
+
+    # continue
+    my_string = "Sammy"
+    for letter in my_string:
+        if letter == 'a':
+            continue  # go back to the top & continue the loop
+        print(letter)
+
+    # break when x = 2
+    x = 5
+    while x < 5:
+        if x == 2:
+            break
+        print(x)
+        x +=1
+
+
+
 Functions
 ---------
 
