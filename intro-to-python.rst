@@ -369,6 +369,8 @@ Sets
     
     print(my_list)
 
+Sets quiz ---> https://github.com/Kudzmat/Python-Installation-Tutorial/blob/main/sets.rst 
+
 
 Booleans and Comparisons
 -------------------------
