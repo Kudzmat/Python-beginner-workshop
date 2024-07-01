@@ -396,50 +396,108 @@ Booleans and Comparisons
     # also <= and >=
 
 
-Comparisons, and True and False
+Python Statements if/elif/else
 -------------------------------
 
-Python *comparison operators*
+.. code-block:: python
 
-::
+    # true statement
+    if 3 > 2:
+        print("It's True!")
+
+    # using variables
+    hungry = False
+    if hungry:
+        print("I'm STARVING!!")
+    # add else
+    else:
+        print("I'm not hungry!!!")
+
+
+    # multiple scenarios
+    language = "python"
+
+    if language == 'python':
+        print("Python Rocks!!!")
+    elif language == 'java':
+        print("I prefer coffee")
+    elif language == 'swift':
+        print("Apple products are cool")
+    else:
+        print("I'm not familiar with this programming language")
 
  
 
-Loops
------
+For Loops
+---------
 
-::
+.. code-block:: python
 
-    >>> for item in range(100):
-    ...     item
-    ...
-    0
-    1
-    [etc]for item in elements
+    my_list = [1,2,3,4,5,6,7,8,9,10]
 
-    >>> for element in elements:
-    ...     element
-    ...
-    'beryllium'
-    'boron'
-    'helium'
-    'hydrogen'
-    'lithium'
-    37
-    ['pancakes', 'bread']
+    # create a for loop to iterate over item
+    for num in my_list:
+        print(num)
 
+    # printing hello 10 times
+    for num in my_list:
+        print("hello")
 
-    # list comprehensions are an excellent way to build lists
-    >>> squares = [item * item for item in range(10)]
-    >>> squares
-    [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+    # check for even numbers by combining with control flow
+    for num in my_list:
+        if num % 2 == 0:
+            print(num)
+        else:
+            print("This is an odd number")
 
-    # you can add an if clause to filter the results
-    # let's get squares of even numbers only
-    >>> squares = [item * item for item in range(10) if item % 2 == 0]
-    >>> squares
-    [0, 4, 16, 36, 64]
+    # get sum of all numbers
+    list_sum = 0
+    for num in my_list:
+        list_sum = list_sum + num
+        print(list_sum)
+    # printing outside for loop prints final value
 
+    # looping through strings
+    my_string = "Hello World"
+    for letter in my_string:
+        print(letter)
+
+    # you can also use an _
+    for _ in my_string:
+        print("cool")
+
+    # tuple unpacking
+    my_list = [(1,2),(3,4),(5,6),(7,8)]
+
+    # printing a's
+    for a,b in my_list:
+        print(a)
+
+    my_list = [(1,2,3),(4,5,6)]
+    # printing c's
+    for a,b,c in my_list:
+        print(c)
+
+    # unpacking dictionaries
+    d = {'k1':1,'k2':2,'k3':3}
+
+    # will iterate through keys by default
+    for item in d:
+        print(item)
+
+    # iterate through items
+    for item in d.items():
+        print(item)    
+
+    # you just want the values
+    for key,value in d.items():
+        print(value)
+
+    for value in d.values():
+        print(value)
+
+While Loops
+------------
 
 Functions
 ---------
