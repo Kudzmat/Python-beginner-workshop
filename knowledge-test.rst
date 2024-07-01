@@ -3,21 +3,21 @@ Strings
 
 Given the string 'hello' give an index command that returns 'e'.
 
-.. code block:: python
+.. code-block:: python
 
     s = 'hello'
     # Print out 'e' using indexing
 
 Reverse the string 'hello' using slicing:
 
-.. code block:: python
+.. code-block:: python
 
     s ='hello'
     # Reverse the string using slicing
 
 Given the string hello, give two methods of producing the letter 'o' using indexing.
 
-.. code block:: python
+.. code-block:: python
 
     s ='hello'
     # Print out the 'o' using two different indexing methods
@@ -30,13 +30,13 @@ Build this list [0,0,0] two separate ways.
 
 Reassign 'hello' in this nested list to say 'goodbye' instead:
 
-.. code block:: python
+.. code-block:: python
 
     list3 = [1,2,[3,4,'hello']]
 
 Sort the list below:
 
-.. code block:: python
+.. code-block:: python
 
     list4 = [5,3,4,6,1]
 
@@ -46,7 +46,7 @@ Dictionaries
 
 Using keys and indexing, grab the 'hello' from the following dictionaries:
 
-.. code block:: python
+.. code-block:: python
 
     d = {'simple_key':'hello'}
     # Grab 'hello'
@@ -79,7 +79,7 @@ What is unique about a set?
 
 Use a set to find the unique values of the list below:
 
-.. code block:: python
+.. code-block:: python
 
     list5 = [1,2,2,33,4,4,11,22,3,3,2]
 
@@ -89,7 +89,7 @@ Booleans
 
 What will be the resulting Boolean of the following pieces of code
 
-.. code block:: python
+.. code-block:: python
 
     2 > 3
 
@@ -103,7 +103,7 @@ What will be the resulting Boolean of the following pieces of code
 
 Final Question: What is the boolean output of the cell block below?
 
-.. code block:: python
+.. code-block:: python
 
     # two nested lists
     l_one = [1,2,[3,4]]
