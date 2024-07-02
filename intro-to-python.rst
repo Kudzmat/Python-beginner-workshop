@@ -537,92 +537,68 @@ While Loops
 Functions
 ---------
 
-::
+.. code-block:: python
 
-    >>> def squares():
-    ...     return [item * item for item in range(10)]
-    ...
-    >>> squares()
-    [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+    # no need to repeat code
+    def say_hello():
+        print("hello")
+        print("how")
+        print("are")
+        print("you")
 
-This function only does one thing, so it's not that useful. So::
+    say_hello()
 
-    # define squares() with a required argument
-    >>> def squares(up_to):
-    ...     return [item * item for item in range(up_to)]
-    ...
-    >>> squares()
-    Traceback (most recent call last):
-      File "<stdin>", line 1, in <module>
-    TypeError: squares() takes exactly 1 argument (0 given)
+    # with parameters
+    def say_hello(name):
+        print(f"hello {name}")
 
-    # we have to provide the argument
-    >>> squares(15)
-    [0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196]
+    say_hello("Snoopy")
 
-    # or we could have defined it with a default argument of 10
-    >>> def squares(up_to=10):
-    ...     return [item * item for item in range(up_to)]
-    ...
+    # setting default parameter
+    def say_hello(name="Adam"):
+        print(f"hello {name}")
 
-We can have multiple arguments::
+    # using return
+    def add_num(num1, num2):
+        return num1 + num2
 
-    >>> def multiples(up_to=10, multiply_by=2):
-    ...     return [item * multiply_by for item in range(up_to)]
-    ...
-    >>> multiples()
-    [0, 2, 4, 6, 8, 10, 12, 14, 16, 18]
-    >>> multiples(10, 5)
-    [0, 5, 10, 15, 20, 25, 30, 35, 40, 45]
+    result = add_num(10,20)
 
-    # using named arguments when calling a function allows you to use
-    # them in a different order
-    >>> multiples(multiply_by=10, up_to=5)
-    [0, 10, 20, 30, 40]
+    # functions with logic
+    2 % 2 # remainder after division is 0 so even num
+    41 % 40 # remainder after division is 1 so odd num
 
+    def even_check(num):
+        return num % 2 == 0
 
-Let's play a game. For this we need to *import* the ``random`` *module*, and
-use the ``choice()`` function.
+    even_check(20)  # True
+    even_check(35)  # False
 
-::
+    # return true if any num in list is even
+    
+    def check_even_list(num_list):
+        for num in num_list:
+            if num % 2 == 0:
+                return True  # functions end after return statement is executed
+            else:
+                pass # don't do anything
 
-    >>> import random
+        return False  # if loop has completed without returning True, return False
 
 
-``choice()`` takes an argument, which needs to be a sequence of some sort, and
-chooses between them at random::
+    # return all the even numbers
+    def check_even_list(num_list):
 
-    >>> random.choice(("black", "white", "red"))
+        # common to have placeholder variables at the top of function
+        even_numbers = []
 
-    # strings are sequences too!
-    >>> random.choice("Refer to the documentation for details")
+        for num in num_list:
+            if num % 2 == 0:
+                even_numbers.append(num)
+            else:
+                pass # don't do anything
 
-::
-
-    >>> def challenge(player_choice=None):
-    ...     if player_choice is None:
-    ...         print("you have to choose something!")
-    ...     elif player_choice is random.choice([True, False]):
-    ...         print("You win!")
-    ...     else:
-    ...         print("You lose!")
-    ...
-
-It's not a very interesting::
-
-    >>> challenge()
-    you have to choose something!
-    >>> challenge(True)
-    You win!
-    >>> challenge(True)
-    You lose!
-    >>> challenge(True)
-    You lose!
-
-Let's make the computer play the game against itself::
-
-    >>> for r in range(1000):
-    ...     challenge(random.choice([True, False]))
+        return even_numbers
 
 
 Scripts
