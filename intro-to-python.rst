@@ -128,10 +128,15 @@ Strings
     my_car = "Tesla"
     print(my_car)
 
+    # new car
+    new_car = input("What care do you have now? )
+
+    print(new_car)
+
     # printitng in a sentence
-    print("My car is a " + my_car)
-    print("My car is a ", my_car)
-    print(f"My car is a {my_car}")
+    print("My car is a " + new_car)
+    print("My car is a ", new_car)
+    print(f"My car is a {new_car}")
 
     # errors
     print('Hey, I'm feeling good')
