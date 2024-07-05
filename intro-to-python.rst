@@ -129,7 +129,7 @@ Strings
     print(my_car)
 
     # new car
-    new_car = input("What care do you have now? )
+    new_car = input("What car do you have now?" )
 
     print(new_car)
 
