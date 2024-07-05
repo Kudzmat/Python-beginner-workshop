@@ -124,6 +124,15 @@ Strings
     # white spaces also count as characters
     print("I am also a string')
 
+    # printitng variables
+    my_car = "Tesla"
+    print(my_car)
+
+    # printitng in a sentence
+    print("My car is a " + my_car)
+    print("My car is a ", my_car)
+    print(f"My car is a {my_car}")
+
     # errors
     print('Hey, I'm feeling good')
 
