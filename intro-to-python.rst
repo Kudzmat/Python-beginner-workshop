@@ -160,6 +160,7 @@ Strings
     print(my_string[9])
     print(my_string[-3])
 
+    """
     # slicing
     my_string = "abcdefghijk"
 
@@ -180,6 +181,7 @@ Strings
     # trick to reverse your string
     # beginning to end in steps of -1
     print(my_string[::-1])
+    """
 
 
 String properties and methods
@@ -187,6 +189,7 @@ String properties and methods
 
 .. code-block:: python
 
+    """
     # immutability
 
     # you want to change name from "Sam" to "Pam"
@@ -204,6 +207,13 @@ String properties and methods
     x = "Hello world"
     x = x + "it is beautiful outside"
     print(x)
+    """
+
+    # concatenation
+    greeting = "it's nice to meet you" 
+    name = input("Who are you?" ) 
+    greeting = greeting + name
+    print(greeting)
 
     # make sure you don't use wrong data type
     2 + 3
