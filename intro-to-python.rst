@@ -59,15 +59,15 @@ Some other useful *operators*
 
 .. code-block:: python
 
-    # 3 to the power of 2
+    # exponentiation 3 to the power of 2
     
     print(3 ** 2)
     
-    # is division, returns whole numbers
+    # floor division, returns whole numbers
     
     print(19//4) 
     
-    # mod operator returns the remainder 
+    # modulo operator returns the remainder 
     
     print(19%4)
     
