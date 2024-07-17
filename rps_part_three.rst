@@ -298,7 +298,7 @@ Bringing it all together!!
 
     # our constants
     CPU_OPTIONS = ['rock', 'paper', 'scissors']
-    USER_OPTIONS = ['rock', 'paper', 'scissors']
+    USER_OPTIONS = [1,2,3]
     GAME_RULES = {
     1: {'strong': 'scissors', 'weak': 'paper'},
     2: {'strong': 'rock', 'weak': 'scissors'},
@@ -354,48 +354,54 @@ Bringing it all together!!
         else:
             return "^^^ It's a Tie!! ^^^ ", 0
 
-        def replay():
+    def replay():
+        menu_options = [1,2]
+        confirmed = False # user has not selected option
             
-            menu_options = [1,2]
-            confirmed = False # user has not selected option
-            
-            # play again or exit
-            while not confirmed:
-                option = int(input("""
-                Please Select:
-                1. Continue Playing
-                2. Stop Playing and Exit"""))
+         # play again or exit
+        while not confirmed:
+            option = int(input("""
+            Please Select:
+            1. Continue Playing
+            2. Stop Playing and Exit"""))
     
                 
-                if option not in menu_options:
-                    print("Please select either 1 or 2")
-                    confirmed = False
+            if option not in menu_options:
+                print("Please select either 1 or 2")
+                confirmed = False
 
-                else:
-                    confirmed = True
+            else:
+                confirmed = True
             return option
 
-        def play_game():
+    def play_game():
 
-            # counters for keeping game score
-            win = 0
-            loss = 0
-            draw = 0
+        # counters for keeping game score
+        win = 0
+        loss = 0
+        draw = 0
     
-            # we want to play multiple rounds
-            playing = True
+        # we want to play multiple rounds
+        playing = True
     
-            while playing:
-                # type casting
-                user_selection = int(input("""Please Select One:
-                1. Rock
-                2. Paper
-                3. Scisoors"""))
+        while playing:
+            # type casting
+            user_selection = int(input("""Please Select One:
+            1. Rock
+            2. Paper
+            3. Scisoors"""))
+
+            # verify
+            if user_selection not in USER_OPTIONS:
+                print("Please select either 1 or 2")
+                continue # top of the loop
+            
+            else:
     
                 # save results in a variable (will be a tuple)
                 results = find_winner(user_selection)
-    
-            
+        
+                
                 # game results
                 # win
                 if result[1] == 1:
@@ -406,16 +412,16 @@ Bringing it all together!!
                 # draw
                 else:
                     draw += 1
-    
+        
                 print(result[0])  # show game result
                 # show current record
                 print(f"""
                 Current Record:
                 Wins - {win} | Losses {loss} | Draws {draw}""")
-
+    
                 # run replay function
                 replay_choice = replay()
-
+    
                 # restart from top of the while loop/ play again
                 if option == 1:
                     continue
