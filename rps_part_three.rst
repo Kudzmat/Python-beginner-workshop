@@ -166,3 +166,48 @@ Let's create even better game logic
         # tie
         else:
             return "^^^ It's a Tie!! ^^^ ", 0
+
+
+Game results and score logic
+------------------------------
+
+
+.. code-block:: python
+
+    def play_game():
+
+        # counters for keeping game score
+        win = 0
+        loss = 0
+        draw = 0
+
+        # we want to play multiple rounds
+        playing = True
+
+        while playing:
+            # type casting
+            user_selection = int(input("""Please Select One:
+            1. Rock
+            2. Paper
+            3. Scisoors"""))
+
+            # save results in a variable (will be a tuple)
+            results = find_winner(user_selection)
+
+        
+            # game results
+            # win
+            if result[1] == 1:
+                win += 1
+            # loss
+            elif result[1] == 2:
+                loss += 1
+            # draw
+            else:
+                draw += 1
+
+            print(result[0])  # show game result
+            # show current record
+            print(f"""
+            Current Record:
+            Wins - {win} | Losses {loss} | Draws {draw}""")
