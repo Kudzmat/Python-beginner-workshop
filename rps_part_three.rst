@@ -98,10 +98,17 @@ Let's create a function for playing the game
         playing = True
 
         while playing:
-            user_selection = input("""Please Select One:
+            # type casting
+            user_selection = int(input("""Please Select One:
             1. Rock
             2. Paper
-            3. Scisoors""")
+            3. Scisoors"""))
+
+            find_winner(user_selection)
+
+        # user_selection as parameter
+    def find_winner(user_selection):
+        pass
 
     # let's also add the option to exit the game using exit()
     while game_on:
