@@ -83,4 +83,36 @@ Defensive programming for using numbers for options
             logged = True
 
     return menu_selection
+
+
+Let's create a function for playing the game
+----------------------------------------------
+
+
+.. code-block:: python
+
+    # let students try this
+    def play_game():
+
+        # we want to play multiple rounds
+        playing = True
+
+        while playing:
+            user_selection = input("""Please Select One:
+            1. Rock
+            2. Paper
+            3. Scisoors""")
+
+    # let's also add the option to exit the game using exit()
+    while game_on:
+            menu_selection = game_menu()
+
+            # play game
+            if menu_selection == 1:
+                pass
+            # exit the game
+            else:
+                game_on = False
     
+    exit()
+            
