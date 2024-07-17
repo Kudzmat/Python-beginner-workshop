@@ -122,4 +122,47 @@ Let's create a function for playing the game
                 game_on = False
     
     exit()
-            
+
+
+Let's create even better game logic
+----------------------------------------------
+
+
+.. code-block:: python
+
+    # constant for game rules using dictionary 
+    GAME_RULES = {
+    1: {'strong': 'scissors', 'weak': 'paper'},
+    2: {'strong': 'rock', 'weak': 'scissors'},
+    3: {'strong': 'paper', 'weak': 'rock'}
+    }
+
+    CPU_CHOICES = ["rock", "paper", "scissors"]
+
+    def find_winner(user_selection):
+
+        # use for loop to start game
+        for item in CPU_CHOICES:
+            print(f"{item.capitalize()}...")
+            time.sleep(1)
+
+        # get cpu option
+        cpu = random.choice(CPU_CHOICES)
+
+        # show each option
+        # since we're using numbers, we can index with a list
+        print(f"{name} - {CPU_CHOICES[user_selection - 1]} vs CPU - {cpu}")
+        print("-------------------------------------")
+
+        
+        # win
+        if GAME_RULES[user]['strong'] == cpu:
+            return "*** You Win!!! ***", 1
+        
+        # lose
+        elif GAME_RULES[user]['weak'] == cpu:
+            return "--- You Lose! --- :(", 2
+        
+        # tie
+        else:
+            return "^^^ It's a Tie!! ^^^ ", 0
