@@ -39,17 +39,16 @@ Let's create more options for the player
 
 .. code-block:: python
   
-def game_menu():
-      
-    # get name
-    global name  # we need to call the global variable before using it
-    name = input("Welcome to Rock, Paper, Scissors! Please Enter Your Name: ").capitalize()
-    print()
-
-    menu_selection = int(input("""
-    Welcome {name}, what would you like to do?
-    1. Play Game
-    2. Exit Game
-    """))
-
-    return menu_selection
+    def game_menu():  
+        # get name
+        global name  # we need to call the global variable before using it
+        name = input("Welcome to Rock, Paper, Scissors! Please Enter Your Name: ").capitalize()
+        print()
+    
+        menu_selection = int(input("""
+        Welcome {name}, what would you like to do?
+        1. Play Game
+        2. Exit Game
+        """))
+    
+        return menu_selection
