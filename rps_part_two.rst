@@ -83,6 +83,19 @@ Add Defensive Programming / Error Handling
         print("Please only select 'rock paper or scissors!'")
         exit()
 
+Let's Add Some Drama
+----------------------
+
+.. code-block:: python
+    
+    # start game
+    print("Rock...")
+    time.sleep(1)
+    print("Paper...")
+    time.sleep(1)
+    print("Scissors...")
+    time.sleep(1)
+    print()
     
     
     
