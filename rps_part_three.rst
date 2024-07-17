@@ -211,3 +211,81 @@ Game results and score logic
             print(f"""
             Current Record:
             Wins - {win} | Losses {loss} | Draws {draw}""")
+
+
+Replaying game and exiting
+------------------------------
+
+
+.. code-block:: python
+
+    def replay():
+            
+            menu_options = [1,2]
+            confirmed = False # user has not selected option
+            
+            # play again or exit
+            while not confirmed:
+                option = int(input("""
+                Please Select:
+                1. Continue Playing
+                2. Stop Playing and Exit"""))
+    
+                
+                if option not in menu_options:
+                    print("Please select either 1 or 2")
+                    confirmed = False
+
+                else:
+                    confirmed = True
+            return option
+
+        # finish up play game logic
+        def play_game():
+
+            # counters for keeping game score
+            win = 0
+            loss = 0
+            draw = 0
+    
+            # we want to play multiple rounds
+            playing = True
+    
+            while playing:
+                # type casting
+                user_selection = int(input("""Please Select One:
+                1. Rock
+                2. Paper
+                3. Scisoors"""))
+    
+                # save results in a variable (will be a tuple)
+                results = find_winner(user_selection)
+    
+            
+                # game results
+                # win
+                if result[1] == 1:
+                    win += 1
+                # loss
+                elif result[1] == 2:
+                    loss += 1
+                # draw
+                else:
+                    draw += 1
+    
+                print(result[0])  # show game result
+                # show current record
+                print(f"""
+                Current Record:
+                Wins - {win} | Losses {loss} | Draws {draw}""")
+
+                # run replay function
+                replay_choice = replay()
+
+                # restart from top of the while loop/ play again
+                if option == 1:
+                    continue
+                else:
+                    playing = False
+        print(f"Bye {name}, thanks For Playing!")
+        exit()
