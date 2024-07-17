@@ -7,7 +7,7 @@ Get CPU Selection Using Random Library
 
     cpu_options = ['rock', 'paper', 'scissors']
 
-    cpu_choice = cpu_options.random.choice()
+    cpu_choice = random.choice(cpu_options)
 
     print(cpu_choice)
 
