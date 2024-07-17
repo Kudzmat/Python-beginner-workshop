@@ -35,34 +35,36 @@ Pick the Winner with if statements
     if user_selection == cpu_choice:
         print(f"{user_name}: *{user_selection}* VS CPU: *{cpu_choice}*")
         print("*** It's a tie! ***")
-
+    
     # rock options
-    elif user_selection == 'rock' and cpu_selection == 'paper':
+    elif user_selection == 'rock' and cpu_choice == 'paper':
         print(f"{user_name}: *{user_selection}* VS CPU: *{cpu_choice}*")
         print("*** You Lose :( ***")
-
-    elif user_selection == 'rock' and cpu_selection == 'scissors':
+    
+    elif user_selection == 'rock' and cpu_choice == 'scissors':
         print(f"{user_name}: *{user_selection}* VS CPU: *{cpu_choice}*")
         print("*** You Win!!! :D ***")
-
+    
     # paper options
-    elif user_selection == 'paper' and cpu_selection == 'rock':
+    
+    elif user_selection == 'paper' and cpu_choice == 'scissors':
         print(f"{user_name}: *{user_selection}* VS CPU: *{cpu_choice}*")
         print("*** You Lose :( ***")
-
-    elif user_selection == 'paper' and cpu_selection == 'scissors':
+    
+    elif user_selection == 'paper' and cpu_choice == 'rock':
         print(f"{user_name}: *{user_selection}* VS CPU: *{cpu_choice}*")
         print("*** You Win!!! :D ***")
-
+    
+    
     # scissors options
-    elif user_selection == 'scissors' and cpu_selection == 'rock':
+    elif user_selection == 'scissors' and cpu_choice == 'rock':
         print(f"{user_name}: *{user_selection}* VS CPU: *{cpu_choice}*")
         print("*** You Lose :( ***")
-
-    elif user_selection == 'scissors' and cpu_selection == 'paper':
+    
+    elif user_selection == 'scissors' and cpu_choice == 'paper':
         print(f"{user_name}: *{user_selection}* VS CPU: *{cpu_choice}*")
         print("*** You Win!!! :D ***")
-
+    
     else:
         print("Hmmmm, something's not right..... Try again")
 
